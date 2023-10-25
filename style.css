@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.login {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    background: #e3e3e3;
+}
