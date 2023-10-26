@@ -39,3 +39,46 @@ body {
     border-radius: 8px;
 }
 
+.input-Box {
+    position: relative;
+    width: 250px;
+}
+
+.input-Box input {
+    width: 100%;
+    padding: 11px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.2s;
+    border-bottom-left-radius: 8px;
+}
+
+.input-Box span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-40px);
+    margin-left: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.4s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.input-Box input:valid~span,
+.input-Box input:focus~span {
+    transform: translateX(113px);
+    font-size: 13px;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 3px;
+    color:#fff;
+}
