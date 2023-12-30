@@ -1,110 +1,214 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+html{
+    display: flex;
+    justify-content: center;
+}
+*,*::after,*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    height: 100vh;
-    width: 100%;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:200px ;
-}
-
-.login {
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    font-weight: bold;
-    font-size: 4vmin;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
-    width: 300px;
-    flex-direction: column;
-    gap: 35px;
-    background: #e3e3e3;
-    box-shadow: 16px 16px 32px #c8c8c8,
-    -16px -16px 32px #fefefe;
-    border-radius: 8px;
-}
-
-.input-Box {
-    position: relative;
-    width: 250px;
-}
-
-.input-Box input {
-    width: 100%;
-    padding: 11px;
-    outline: none;
-    border: none;
-    color: #000;
-    font-size: 16px;
-    background: transparent;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
-    transition: 0.2s;
-    border-bottom-left-radius: 8px;
-}
-
-.input-Box span {
-    margin-top: 5px;
-    position: absolute;
-    left: 0;
-    transform: translateY(-40px);
-    margin-left: 10px;
-    pointer-events: none;
-    font-size: 14px;
-    color: #000;
-    text-transform: uppercase;
-    transition: 0.4s;
-    letter-spacing: 3px;
-    border-radius: 8px;
-}
-
-.input-Box input:valid~span,
-.input-Box input:focus~span {
-    transform: translateX(113px);
-    font-size: 13px;
-    padding: 5px 10px;
-    background: #000;
-    letter-spacing: 3px;
-    color:#fff;
-    border: 2px;
-}
-
-.input-Box input:valid,
-.input-Box input:focus {
-    border: 2px solid #000;
-    border-radius: 8px;
-}
-
-.enter {
-    height: 40px ;
-    width: 120px;
-    border-radius: 5px;
-    border: 2px solid #000;
-    cursor: pointer;
-    background-color: transparent;
-    transition: 0.3s;
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 16px;
-}
-
-.enter:hover {
-    background-color: #000;
+body{
+    width: 100vw;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;   
+    max-width: 1540px;
+    text-align: center; 
     color: #fff;
 }
+main{
+    background: #151536;
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+header{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: #000;
+    height: 100px;
+    position: fixed;
+}
+.logobox{
+   
+    
+    
+}
+.logo-link{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.logo{
+    width: 170px;
+    height: 130px;
+}
+
+.linkbox{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #000;
+}
+main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    border-bottom: 1px solid;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-bottom: 160px;
+}
+.main_text{
+    width: 90%;
+    text-align: start;
+    font-size: 65px;
+    font-family: 'Lato', sans-serif;
+    /* letter-spacing: 2px; */
+    margin-bottom: 150px;
+}
+.teleg_button{
+    margin-bottom: -200px;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;
+    background: #0662e3;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
+.card{
+    width: 100%;
+    height: 700px;
+    background: #151536;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_title{
+    padding-top: 60px;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+.iconbox{
+    width: 80%;
+    display: flex;
+    margin-top: 70px;
+}
+.icon_box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    text-align: start;
+}
+.icon_i{
+    margin-top: 20px;
+    font-size: 40px;
+}
+iframe{
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 1250px) {
+    .icon_i{
+        font-size: 25px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .main_text{
+        font-size: 50px;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+  }
+@media only screen and (max-width: 560px) {
+    .navbar{
+        padding: 0 10px;
+    }
+    .linkbox{
+        width: 230px;
+    }
+    .navlink{
+        font-size: 14px;
+        
+    }
+    .contact{
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    main{
+        justify-content: start;
+        padding: 0;
+        padding-top: 40px;
+        align-items: center;
+        height: 300px;
+    }
+    .main_text{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .card{
+        height: 750px;
+    }
+    .iconbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .teleg_button{
+        margin-top: 30px;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    
+    .navlink{
+        font-size: 14px;
+        display: none;   
+    }
+    .linkbox{
+        justify-content: end;
+    }
+    .teleg_button{
+        width: 300px;
+    }
+    .main_text{
+        font-size: 25px;
+    }
+    .card_title{
+        font-size: 18px;
+    }
+  }
